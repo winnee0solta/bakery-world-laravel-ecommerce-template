@@ -1,0 +1,1 @@
+# bakery-world-laravel-ecommerce-template
