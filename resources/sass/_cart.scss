@@ -1,0 +1,314 @@
+.wtn-grace-cart-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(204, 204, 204, 1);
+    margin: 30px 15px;
+    margin-bottom: 20px;
+    font-family: $font-roboto-condensed;
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        font-family: $font-roboto-condensed;
+        text-align: center;
+        margin-top: 1.5rem;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    h6 {
+        margin-left: 1.5rem;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        font-family: $font-roboto-condensed;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .wtn-grace-single-cart-product-container {
+        padding: 1.5rem;
+        color: #000;
+
+        .wtn-grace-cart-product {
+            padding: 20px;
+
+            display: inline-block;
+
+            &:hover {
+                box-shadow: 1rem 1rem 6rem rgba(204, 204, 204, 1);
+            }
+
+            &--img {
+                // height: 150px;
+                // display: block;
+                margin: 0 auto;
+            }
+
+            &--title {
+                color: #000;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 1.5rem;
+                font-family: $font-roboto-condensed;
+                text-align: left;
+                margin: 0;
+            }
+
+            &--quantity {
+                margin-top: 10px;
+                color: #000;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 1.4rem;
+                font-family: $font-roboto-condensed;
+                text-align: left;
+
+            }
+
+            &--price {
+                margin-top: 5px;
+                color: #000;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 1.4rem;
+                font-family: $font-roboto-condensed;
+                text-align: left;
+
+            }
+
+            &--remove {
+                margin-top: 10px;
+                padding: 0.7rem 2rem;
+
+            }
+
+
+        }
+    }
+}
+
+.wtn-grace-cart-summary-container {
+    color: #000;
+    padding: 1.54rem;
+    margin-top: 5rem;
+    border: 2px solid #000;
+
+    .wtn-grace-cart-summary {
+        &--divider {
+            // height: 10px;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.3rem;
+            border-bottom: 2px solid #000;
+        }
+
+        &--total {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+
+            &-title {
+                text-align: left;
+            }
+
+            &-value {
+                text-align: right;
+            }
+
+        }
+
+        &--checkout {
+
+            a {
+                background-color: #000;
+                color: #fff;
+                font-size: 14px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 3.5rem;
+                max-width: 20rem;
+            }
+        }
+
+    }
+
+}
+
+//for checkout
+
+.wtn-grace-checkout-container {
+    color: #000;
+    padding: 1.54rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 2px solid #000;
+
+    .wtn-grace-checkout {
+        &--divider {
+            // height: 10px;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.3rem;
+            border-bottom: 2px solid #000;
+        }
+
+
+
+        &--total {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+
+            &-title {
+                text-align: left;
+            }
+
+            &-value {
+                text-align: right;
+            }
+
+        }
+
+        &--checkout {
+
+            a {
+                background-color: #000;
+                color: #fff;
+                font-size: 14px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 3.5rem;
+                max-width: 20rem;
+            }
+        }
+
+    }
+
+}
+
+//removing spinner in input type = number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.wtn-form {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    &--label {
+        margin-top: 1rem;
+        margin-left: 35px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    &--input {
+        width: 90%;
+        font-size: 1.5rem;
+        color: $gray_color;
+        background: rgba(255, 255, 255, .9);
+        box-shadow: none;
+        font-weight: 500;
+        line-height: 3rem;
+        border-radius: 4rem;
+        transition: .5s ease-out;
+        border-color: $gray_color;
+        margin-top: 5px;
+        padding-left: 2rem;
+        padding-right: 4rem;
+        height: 46px;
+        margin-left: 20px;
+    }
+
+    &--submit {
+        margin: 0 auto;
+        background: black;
+        color: white;
+        font-weight: 500;
+        font-size: 1.3rem;
+        transition: 0.6s ease-in-out;
+        border-radius: 10rem;
+        margin-top: 20px;
+        height: 50px;
+        width: 60%;
+        text-transform: uppercase;
+
+        &:hover {
+            color: black;
+            background: white;
+            border: 2px solid black;
+            transition: 0.6s ease-in-out;
+            font-weight: 800;
+        }
+    }
+}
+
+
+
+.wtn-grace-payment-container {
+    color: #000;
+    padding: 1.54rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border: 2px solid #000;
+
+    .wtn-grace-payment {
+        &--divider {
+            // height: 10px;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.3rem;
+            border-bottom: 2px solid #000;
+        }
+        h4{
+            margin-bottom: 20px;
+        }
+        p{
+            text-transform: none;
+            font-size: 15px;
+            margin-left: 2rem;
+            margin-bottom: 7px;
+        }
+    }
+
+}
+
+.wtn-grace-orderplaced-container {
+    color: #000;
+    padding: 1.54rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 2px solid #000;
+
+    .wtn-grace-orderplaced {
+        &--divider {
+            // height: 10px;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.3rem;
+            border-bottom: 2px solid #000;
+        }
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-transform: none;
+            font-size: 15px;
+            margin-left: 2rem;
+            margin-bottom: 7px;
+        }
+    }
+
+}

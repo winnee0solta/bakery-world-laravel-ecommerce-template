@@ -1,0 +1,46 @@
+
+
+.navbar {
+    padding: 8px 25px 8px 10px;
+        transition: all 0.5s;
+        background: #fff;
+        box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+}
+
+.navbar-nav {
+    text-align: center;
+
+    a {
+        font-family: $font-poppins;
+        display: inline !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin-right: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: black !important;
+        border: 2px solid white;
+
+        &:hover {
+            border: 2px solid black;
+            border-width: 50%;
+            transition: 200ms all ease-in-out;
+            //     @include respond(phone) {}
+            //     border: 1px solid black;
+        }
+
+    }
+
+    @include respond(phone) {
+        margin-top: 20px;
+    }
+}
+.navbar-brand {
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+   img{
+       height: 35px;
+   }
+}
